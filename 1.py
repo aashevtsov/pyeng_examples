@@ -1,4 +1,4 @@
-'''
+
 nat = "ip nat inside source list ACL interface FastEthernet0/1 overload"
 print(nat,'\n')
 print(nat.replace('Fast','Gigabit'))
@@ -59,4 +59,3 @@ int(octets[1]),
  int(octets[2]), 
  int(octets[3])))
 print("*****************\n")
-'''
