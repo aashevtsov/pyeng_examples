@@ -27,18 +27,20 @@ result = sorted(set(res1) & set(res2))
 print(result)
 print("*****************\n")
 
+
 ospf_route = "      10.0.24.0/24 [110/41] via 10.0.13.3, 3d18h, FastEthernet0/0"
 
-output = '\n{:25}'*5
-route = ospf_route.replace(",",'').replace('[','').replace(']','')
+output = '\n{:25}{}' * 5
+route = ospf_route.replace(",",' ').replace('[','').replace(']','')
 route = route.split()
 
+
 print(output.format(
-    "prefix",route[0],
-    "AD/Metric",route[1],
-    "Next-Hop",route[2],
-    "Last update",route[3],
-    "Outbound Interface",route[5]
+        "Prefix", route[0],
+        "AD/Metric", route[1],
+        "Next-Hop", route[3],
+        "Last update", route[4],
+        "Outbound Interface", route[5],
 ))
 print("*****************\n")
 
