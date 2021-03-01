@@ -1,0 +1,5 @@
+#Python
+
+
+
+simle python scripts
