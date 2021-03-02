@@ -16,7 +16,7 @@ question = {'access': "Введите норме влана: ",'trunk': "вве�
 
 mode = input("Ввежите режим работы интерфейса: ")
 interface = input("Введите тип и номер интерфейса: ")
-vlans = input("Введите норме влана(ов): ")
+vlans = input(question[mode])
 
-print(f"Interface,{interface}",'\n')
+print(f"Interface,{interface}")
 print('\n'.join(template[mode]).format(vlans))
