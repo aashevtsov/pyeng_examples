@@ -1,3 +1,4 @@
+#Work_version
 network = input("Введите адрес сети: ")
 ip,mask = network.split("/")
 ip_list =  ip.split('.')
@@ -16,7 +17,7 @@ net1, net2, net3, net4 = [
     int(bin_network_str[0:8], 2),
     int(bin_network_str[8:16], 2),
     int(bin_network_str[16:24], 2),
-    int(bin_network_str[24:32], 2),
+    int(bin_network_str[24:32], 2)
 ]
 bin_mask = '1' * mask + '0' * (32 - mask)
 m1,m2,m3,m4, =[
