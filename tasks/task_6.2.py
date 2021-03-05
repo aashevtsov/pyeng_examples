@@ -1,6 +1,6 @@
 while True:
-    ip_address = input("введите ip адресс:")
-    octets = ip_address.split('.')
+    ipaddress = input("введите ip адресс:")
+    octets = ipaddress.split('.')
     correct_ip = True
 
     if len(octets) == 4:
@@ -19,11 +19,11 @@ first_octet = int(octets[0])
     
 if 1 <= first_octet <= 223:
     print("unicast")
-elif ip_address == "0.0.0.0":
+elif ipaddress == "0.0.0.0":
     print("unassigned")
 elif 224 <= first_octet <= 239:
     print("multicast")
-elif ip_address == '255,255,255,255':
+elif ipaddress == '255,255,255,255':
     print("Broadcast")
 else:
     print("unused")
